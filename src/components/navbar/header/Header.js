@@ -1,9 +1,25 @@
  
  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css"
-import { faBed, faCar, faPerson, faPlane, faTaxi } from "@fortawesome/free-solid-svg-icons";
-import { faCalendar, faCalendarDays } from "@fortawesome/free-regular-svg-icons";
- const Header = () => {
+import { faBed,faCalendarDays, faCar, faPerson, faPlane, faTaxi } from "@fortawesome/free-solid-svg-icons";
+// import { DateRange } from 'react-date-range';
+import { useState } from "react";
+import 'react-date-range/dist/styles.css'; // main css file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import {format } from "date-fns"
+
+const Header = () => {
+    const [openDate, setOpenDate] = useState(false)
+ 
+    // const [date, setDate] = useState([
+        // 
+        // {
+        //   startDate: new Date(),
+        //   endDate: newDate,
+        //   key: 'selection'
+        // }
+    //   ]);
+    
    return (
      <div className='header'>
         <div className="headerContainer"> 
@@ -47,12 +63,24 @@ import { faCalendar, faCalendarDays } from "@fortawesome/free-regular-svg-icons"
 
             <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon"/>
-            <span className="headerSearchText">date to date</span>
+            <span onClick={() => setOpenDate(!openDate)} className="headerSearchText">{`$format(date[0], startDate, "MM/dd/YYyy")} to "MM/dd/YYyy")}`}</span>
+            {/* openDate &&
+             <DateRange
+    editableDateInputs={true}
+    onChange={item => setDate([item.selection])}
+    moveRangeOnFirstSelection={false}
+    ranges={date}
+    classname="date"
+    />  */}
             </div>
 
             <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon"/>
             <span className="headerSearchText">2 adults 2 children 1 room</span>
+            </div>
+
+            <div className="headerSearchItem">
+                <button className="headerBtn">Search</button>
             </div>
 
         </div>

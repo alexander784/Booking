@@ -9,7 +9,27 @@ import { faBed } from "@fortawesome/free-solid-svg-icons";
             <div className="headerListItem">
             <FontAwesomeIcon icon={faBed} />
             <span>Stays</span>
-            
+            </div>
+
+            <div className="headerListItem">
+            <FontAwesomeIcon icon={faBed} />
+            <span>Flights</span>
+            </div>
+
+            <div className="headerListItem">
+            <FontAwesomeIcon icon={faBed} />
+            <span>Car rentals</span>
+            </div>
+
+            <div className="headerListItem">
+            <FontAwesomeIcon icon={faBed} />
+            <span>Attractions</span>
+            </div>
+
+            <div className="headerListItem">
+            <FontAwesomeIcon icon={faBed} />
+            <span>Airport Taxis</span>
+
             </div>
         </div>
 

@@ -51,8 +51,7 @@ import { faCalendar, faCalendarDays } from "@fortawesome/free-regular-svg-icons"
             </div>
 
             <div className="headerSearchItem">
-            <FontAwesomeIcon icon={faPerson} 
-            className="headerIcon"/>
+            <FontAwesomeIcon icon={faPerson} className="headerIcon"/>
             <span className="headerSearchText">2 adults 2 children 1 room</span>
             </div>
 

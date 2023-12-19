@@ -5,6 +5,7 @@ import { faBed, faCar, faPlane, faTaxi } from "@fortawesome/free-solid-svg-icons
  const Header = () => {
    return (
      <div className='header'>
+        <div className="headerContainer"> 
         <div className="headerList">
             <div className="headerListItem active"> 
             <FontAwesomeIcon icon={faBed} />
@@ -35,7 +36,9 @@ import { faBed, faCar, faPlane, faTaxi } from "@fortawesome/free-solid-svg-icons
         <p className="headerDesc">
             Get rewarded for your travels unlock instant savings of 10% or more with free lexabookings account.
         </p>
+        <button className="headerBtn">Sign in/Register</button>
 
+        </div>
         </div>
    )
  }

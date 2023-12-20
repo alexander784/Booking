@@ -5,7 +5,7 @@ const PropertyList = () => {
   return (
     <div className='pList'>
             <div className='pListItem'>
-                <img src='https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.webp?b=1&s=170667a&w=0&k=20&c=ah_EIbkQ3k7bSq9NB9_dsOe4NzQscK6isVjAOKKpL4c='></img>
+                <img src='https://media.istockphoto.com/id/1418701619/photo/hotel-sign-on-building-facade-in-city-business-travel-and-tourism.webp?b=1&s=170667a&w=0&k=20&c=uIRa5bKnOqDv1aE282-wb-MzKHQpFE6CN5ghgDqK5MQ='></img>
                 <div className='pListTitles'>
                     <h1>Hotels</h1>
                     <h2>233 hotels</h2>

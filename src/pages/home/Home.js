@@ -1,5 +1,6 @@
 import FeaturedProperties from "../../components/FeaturedProperties/FeaturedProperties";
 import PropertyList from "../../components/Property.List/PropertyList";
+import MainList from "../../components/mainlist/MainList";
 import Navbar from "../../components/navbar/Navbar";
 import Featured from "../../components/navbar/featured/Featured";
 import Header from "../../components/navbar/header/Header";
@@ -16,6 +17,8 @@ const Home = () => {
         <PropertyList />
         <h1 className="homeTitle">Homes guests love</h1>
         <FeaturedProperties />
+
+        <MainList />
       </div>
 
     </div>

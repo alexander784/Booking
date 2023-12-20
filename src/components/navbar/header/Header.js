@@ -7,6 +7,7 @@ import { useState } from "react";
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import {format } from "date-fns"
+import { type } from "@testing-library/user-event/dist/type";
 
 const Header = () => {
     const [openoptions, setOpenOptions] = useState(false);
@@ -36,7 +37,7 @@ const Header = () => {
     
    return (
      <div className='header'>
-        <div className="headerContainer"> 
+        <div className={type === "list" ? "headerContainer listMode" : "headerContainer"}> 
         <div className="headerList">
             <div className="headerListItem active"> 
             <FontAwesomeIcon icon={faBed} />
@@ -63,6 +64,10 @@ const Header = () => {
             <span>Airport Taxis</span>
             </div>
         </div>
+
+        { type !== "list" &&
+            <>
+
         <h1 className="headerTitle"> A LifeTime discount? It's Genius.</h1>
         <p className="headerDesc">
             Get rewarded for your travels unlock instant savings of 10% or more with free lexabookings account.
@@ -128,7 +133,7 @@ const Header = () => {
 
         </div>
 
-        </div>
+        </div></>}
         </div>
         </div>
    )

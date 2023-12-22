@@ -48,8 +48,8 @@ const Footer = () => {
                 <li className="flistItem">Airports</li>
                 <li className="flistItem">Hotels</li>
                 </ul>
-
             </div>
+            <div className="fText">Copyright @ 2023 Alexander</div>
         </div>
   )
 }

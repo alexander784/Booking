@@ -11,6 +11,7 @@ import { type } from "@testing-library/user-event/dist/type";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const [openDate, setOpenDate] = useState("");
     const [destination, setDestination] = useState("")
     const [openoptions, setOpenOptions] = useState(false);
     const [ options, setOptions] = useState({
@@ -92,9 +93,9 @@ const Header = () => {
 
             <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon"/>
-            {/* <span onClick={() => setOpenDate(!openDate)} className="headerSearchText">{`$format(date[0], startDate, "MM/dd/YYyy")} to "MM/dd/YYyy")}`}</span> */}
-            {/* openDate &&
-             <DateRange
+             <span onClick={() => setOpenDate(!openDate)} className="headerSearchText">{`$format(date[0], startDate, "MM/dd/YYyy")} to "MM/dd/YYyy")}`}</span>
+             openDate &&
+             {/* <DateRange
     editableDateInputs={true}
     onChange={item => setDate([item.selection])}
     moveRangeOnFirstSelection={false}

@@ -3,7 +3,7 @@ import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/navbar/header/Header';
 import "./list.css"
 import { useLocation } from 'react-router-dom';
-import { DateRange } from 'react-date-range';
+// import { DateRange } from 'react-date-range';
 // import { DateRange } from 'react-date-range';
 const List = () => {
 
@@ -32,22 +32,50 @@ const List = () => {
                 "MM/dd/yyyy"
               )}`}</span> */}
 
-              {openDate && ( <DateRange onChange={(item) => setDate([item.selection])}
+              {/* {openDate && ( <DateRange onChange={(item) => setDate([item.selection])}
               minDate={new Date()}
               ranges={date}
               />
               )}
-              
+               */}
             </div>
             <div className='lsItem'>
               <label>options</label>
-              
+              <div className='lsOptionItem'>
+                <span className='lsOptionText'>Min price <small>Per night</small></span>
+                <input type='number' className='lsOptionInput' />
+              </div>
+              <div className='lsOptionItem'>
+                <span className='lsOptionText'>
+                  Max price <small>Per night</small>
+                  </span>
+                <input type='number' className='lsOptionInput' />
+              </div>
+              <div className='lsOptionItem'>
+                <span className='lsOptionText'>
+                  Adult 
+                  </span>
+                <input type='number' className='lsOptionInput' />
+              </div>
+              <div className='lsOptionItem'>
+                <span className='lsOptionText'>
+                  Children</span>
+                <input type='number' className='lsOptionInput' />
+              </div>
+              <div className='lsOptionItem'>
+                <span className='lsOptionText'>
+                  Room </span>
+                <input type='number' className='lsOptionInput' />
+              </div>
+
             </div>
 
             
           </div>
 
-            <div className='listResult'></div>
+            <div className='listResult'>
+              <searchItem/>
+            </div>
         </div>
       </div>
     </div>

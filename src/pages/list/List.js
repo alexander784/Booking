@@ -27,7 +27,7 @@ const List = () => {
             </div>
             <div className='lsItem'>
               <label>Check in Date</label>
-              {/* <span onClick={}>{`${form at(date[0].startDate, "MM/dd/yyyy")} to ${format(
+              {/* <span onClick={() => setOpenDate(!openDate)}>{`${form at(date[0].startDate, "MM/dd/yyyy")} to ${format(
                 date[0].endDate,
                 "MM/dd/yyyy"
               )}`}</span> */}
@@ -37,6 +37,10 @@ const List = () => {
               ranges={date}
               />
               )}
+              
+            </div>
+            <div className='lsItem'>
+              <label>options</label>
               
             </div>
 

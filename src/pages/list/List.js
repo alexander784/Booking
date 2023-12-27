@@ -41,9 +41,12 @@ const List = () => {
             </div>
             <div className='lsItem'>
               <label>options</label>
+              {/* <div className='lsOptions' */}
+              {/* > */}
+
               <div className='lsOptionItem'>
                 <span className='lsOptionText'>Min price <small>Per night</small></span>
-                <input type='number' className='lsOptionInput' />
+                <input type='number' className='lsOptionInput'  />
               </div>
               <div className='lsOptionItem'>
                 <span className='lsOptionText'>
@@ -55,23 +58,23 @@ const List = () => {
                 <span className='lsOptionText'>
                   Adult 
                   </span>
-                <input type='number' className='lsOptionInput' />
+                <input type='number'  min={1}className='lsOptionInput' placeholder= { options.adult } />
               </div>
               <div className='lsOptionItem'>
                 <span className='lsOptionText'>
                   Children</span>
-                <input type='number' className='lsOptionInput' />
+                <input type='number' min={0} className='lsOptionInput' placeholder= { options.Children } />
               </div>
               <div className='lsOptionItem'>
                 <span className='lsOptionText'>
                   Room </span>
-                <input type='number' className='lsOptionInput' />
+                <input type='number' min={1} className='lsOptionInput' placeholder= { options.Room } />
               </div>
-
             </div>
-
-            
+            <button>Search</button>
           </div>
+
+          
 
             <div className='listResult'>
               <searchItem/>
@@ -79,6 +82,7 @@ const List = () => {
         </div>
       </div>
     </div>
+    // </div>
   )
 }
 

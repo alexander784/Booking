@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/navbar/header/Header';
+import SearchItem from '../../components/searchItem/SearchItem';
 import "./list.css"
 import { useLocation } from 'react-router-dom';
 // import { DateRange } from 'react-date-range';
@@ -23,7 +24,7 @@ const List = () => {
             <h1 className='lsTitle'>Search</h1>
             <div className='lsItem'>
               <label>Destination</label>
-              <input placeholder='{destination}' type='text' />
+              <input placeholder={"destination"} type='text' />
             </div>
             <div className='lsItem'>
               <label>Check in Date</label>
@@ -77,7 +78,15 @@ const List = () => {
           
 
             <div className='listResult'>
-              <searchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
+              <SearchItem/>
             </div>
         </div>
       </div>

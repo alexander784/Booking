@@ -4,7 +4,9 @@ import List from "../../pages/list/List";
 const SearchItem = () => {
   return (
     <div className="searchItem">
-      <img src="https://unsplash.com/photos/white-wooden-dining-table-set-during-daytime-nBuiLbz_j4A" alt="" className="Img"
+      <img src="https://media.istockphoto.com/id/1318363878/photo/luxury-modern-bedroom-interior-at-night.webp?b=1&s=170667a&w=0&k=20&c=92VQlNjNQbG4V2eWlsGNNc9kuqbYTCwjRvriOQIQ2lc=" 
+      alt=""
+       className="siImg"
       />
       <div className="siDesc">
         <h1 className="siTitle">Tower Street Apartment</h1>

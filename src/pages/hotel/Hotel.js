@@ -4,13 +4,17 @@ import Header from "../../components/navbar/header/Header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import MainList from "../../components/mainlist/MainList"
 import Footer from "../../components/footer/Footer"
-import { faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import { faCircle, faCircleArrowLeft, faCircleArrowRight, faCircleXmark, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { parseWithOptions } from "date-fns/fp"
+import { useState } from "react"
 const Hotel = () => {
+
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const photos = [
     {
-      src: "https://unsplash.com/photos/an-aerial-view-of-a-city-with-a-bridge-SVGJsMVjEF4"
+      src: "https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
     },
     {
       src: "https://unsplash.com/photos/an-aerial-view-of-a-city-with-a-bridge-SVGJsMVjEF4"
@@ -28,12 +32,21 @@ const Hotel = () => {
       src: "https://unsplash.com/photos/an-aerial-view-of-a-city-with-a-bridge-SVGJsMVjEF4"
     }
     
-  ]
+  ];
+
+  const handleOpen = (i) => {
+    setSlideNumber(i);
+    setOpen(true);
+  } 
   return (
     <div>
       <Navbar />
       <Header type ="list"/>
       <div className="hotelContainer">
+         {open &&<div className="slider">
+          
+
+        </div> }
         <div className="hotelWrapper">
           <div className="book Now"> Reserve or Book Now!</div>
           <h1 className="hotelTitle">Grand Hotel</h1>
@@ -48,9 +61,9 @@ const Hotel = () => {
             Book a stay over $114 at this property and get a free airport taxi
           </span>
           <div className="hotelImages">
-            {photos.map(photo=>(
+            {photos.map((photoc,i)=>(
               <div className="hotelImgWrapper">
-                <img src="photo.src" alt="" className="hotelImg" />
+                <img onClick={handleOpen} src="photo.src" alt="" className="hotelImg" />
         </div>
 
             ))}

@@ -2,6 +2,8 @@ import "./hotel.css"
 import Navbar from "../../components/navbar/Navbar"
 import Header from "../../components/navbar/header/Header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import MainList from "../../components/mainlist/MainList"
+import Footer from "../../components/footer/Footer"
 import { faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { parseWithOptions } from "date-fns/fp"
 const Hotel = () => {
@@ -75,7 +77,8 @@ const Hotel = () => {
             </div>
           </div>
       </div>
-      
+      <MainList />
+      <Footer />
     </div>
     </div>
   )

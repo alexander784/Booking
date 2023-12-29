@@ -74,8 +74,8 @@ const Hotel = () => {
               <button>Reserve or Book Now</button>
             </div>
           </div>
-
       </div>
+      
     </div>
     </div>
   )

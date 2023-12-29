@@ -1,6 +1,6 @@
 import "./hotel.css"
-import Header from "../../components/header/Header"
 import Navbar from "../../components/navbar/Navbar"
+import Header from "../../components/navbar/header/Header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { parseWithOptions } from "date-fns/fp"
@@ -33,9 +33,10 @@ const Hotel = () => {
       <Header type ="list"/>
       <div className="hotelContainer">
         <div className="hotelWrapper">
+          <div className="book Now"> Reserve or Book Now!</div>
           <h1 className="hotelTitle">Grand Hotel</h1>
           <div className="hotelAddres">
-            <FontAwesome Icon ={faLocationDot} />
+            <FontAwesomeIcon icon = {faLocationDot} />
             <span>Elton St  125 New york</span>
           </div>
           <span className="hotelDistance">

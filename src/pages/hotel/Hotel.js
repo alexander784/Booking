@@ -44,7 +44,12 @@ const Hotel = () => {
       <Header type ="list"/>
       <div className="hotelContainer">
          {open &&<div className="slider">
-          
+          <FontAwesomeIcon icon={faCircleXmark} />
+          <FontAwesomeIcon icon={faCircleArrowLeft} />
+          <div className="silderWrapper">
+            <img src="{photos[slideNumber]}" alt="" className="silderImg" />
+          </div>
+          <FontAwesomeIcon icon={faCircleArrowRight} />
 
         </div> }
         <div className="hotelWrapper">
@@ -94,6 +99,7 @@ const Hotel = () => {
       <Footer />
     </div>
     </div>
+    
   )
 }
 

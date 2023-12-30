@@ -47,7 +47,7 @@ const Hotel = () => {
           <FontAwesomeIcon icon={faCircleXmark} />
           <FontAwesomeIcon icon={faCircleArrowLeft} />
           <div className="silderWrapper">
-            <img src="{photos[slideNumber]}" alt="" className="silderImg" />
+            <img src="{photos[slideNumber].src}" alt="" className="silderImg" />
           </div>
           <FontAwesomeIcon icon={faCircleArrowRight} />
 
@@ -68,7 +68,7 @@ const Hotel = () => {
           <div className="hotelImages">
             {photos.map((photoc,i)=>(
               <div className="hotelImgWrapper">
-                <img onClick={handleOpen} src="photo.src" alt="" className="hotelImg" />
+                <img onClick={ () => handleOpen(i)} src="photo.src" alt="" className="hotelImg" />
         </div>
 
             ))}

@@ -1,6 +1,6 @@
 import "./hotel.css"
 import Navbar from "../../components/navbar/Navbar"
-import Header from "../../components/navbar/header/Header"
+import Header from "../../components/header/Header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import MainList from "../../components/mainlist/MainList"
 import Footer from "../../components/footer/Footer"

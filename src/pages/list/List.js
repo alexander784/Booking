@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/navbar/Navbar';
-import Header from '../../components/navbar/header/Header';
+import Header from '../../components/header/Header';
 import SearchItem from '../../components/searchItem/SearchItem';
 import "./list.css"
 import { useLocation } from 'react-router-dom';

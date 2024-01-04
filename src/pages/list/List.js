@@ -10,9 +10,9 @@ const List = () => {
 
   const[opendate, setOpenDate] = useState(false);
   const location = useLocation()
-  const [destination, setDestination] = useState(location.state.destination)
-  const [date, setDate] = useState(location.state.destination)
-  const [options, setOptions] = useState(location.state.destination)
+  const [destination, setDestination] = useState(location.state.destination);
+  const [date, setDate] = useState(location.state.date);
+  const [options, setOptions] = useState(location.state.options);
 
   return (
     <div>

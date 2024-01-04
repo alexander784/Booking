@@ -14,10 +14,11 @@ Welcome to our lexa Hotel Booking App! This application allows users to search f
   3. Run the App:
     `npm start`
 
-    <p> This will start the development server you can view the app by navigating to `http://localhost:3000/hotels` in your favorite browser.
+    <p> This will start the development server you can view the app by navigating to `http://localhost:3000/hotels` in your favorite browser. 
+    </p>
 
 
-    ## Features:
+## Features:
     1. Search for Places:
      Users can easily search for hotels or accommodations based on their preferred location, dates, and other filters.
 

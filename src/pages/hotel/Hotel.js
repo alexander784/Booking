@@ -7,6 +7,7 @@ import Footer from "../../components/footer/Footer"
 import { faCircle, faCircleArrowLeft, faCircleArrowRight, faCircleXmark, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { parseWithOptions } from "date-fns/fp"
 import { useState } from "react"
+import { constructFrom } from "date-fns"
 const Hotel = () => {
 
   const [slideNumber, setSlideNumber] = useState(0);
@@ -37,19 +38,33 @@ const Hotel = () => {
   const handleOpen = (i) => {
     setSlideNumber(i);
     setOpen(true);
-  } 
+  };
+
+  const handleMove = (direction) => {
+    let newSlideNumber;
+
+    if(direction === "l") {
+      newSlideNumber = slideNumber === 0 ? 5 : slideNumber -1;
+
+    }else {
+      newSlideNumber = slideNumber === 5 ? 0 : slideNumber + 1;
+    }
+
+    setSlideNumber(newSlideNumber)
+
+  };
   return (
     <div>
       <Navbar />
       <Header type ="list"/>
       <div className="hotelContainer">
          {open &&<div className="slider">
-          <FontAwesomeIcon icon={faCircleXmark} />
-          <FontAwesomeIcon icon={faCircleArrowLeft} />
+          <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={ () => setOpen(false)} />
+          <FontAwesomeIcon icon={faCircleArrowLeft} className="arrow"  onClick={ () => handleMove("l")}/>
           <div className="silderWrapper">
             <img src="{photos[slideNumber].src}" alt="" className="silderImg" />
           </div>
-          <FontAwesomeIcon icon={faCircleArrowRight} />
+          <FontAwesomeIcon icon={faCircleArrowRight} className="arrow"  onClick={ () => handleMove ("r")}/>
 
         </div> }
         <div className="hotelWrapper">

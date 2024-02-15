@@ -32,9 +32,9 @@ Welcome to our lexa Hotel Booking App! This application allows users to search f
 
  1. React: This project is built using the React library to create a dynamic and interactive user interface.
 
-2. Redux: State management is handled efficiently with Redux, ensuring a smooth flow of data throughout the app.
 
-3. React Router: Navigation is powered by React Router, enabling seamless transitions between different views within the application.
+
+2.  React Router: Navigation is powered by React Router, enabling seamless transitions between different views within the application.
 
 
 ## Author:

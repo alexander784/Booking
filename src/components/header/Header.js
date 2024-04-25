@@ -78,7 +78,7 @@ const Header = () => {
         { type !== "list" &&
             <>
 
-        <h1 className="headerTitle"> A LifeTime discount? It's Genius.</h1>
+        <h1 className="headerTitle">A lifetime Experience!!</h1>
         <p className="headerDesc">
             Get rewarded for your travels unlock instant savings of 10% or more with free lexabookings account.
         </p>

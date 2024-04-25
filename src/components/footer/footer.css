@@ -22,3 +22,10 @@
     color: salmon;
     cursor: pointer;
 }
+.fText{
+    display: flex;
+    color: brown;
+    align-items: center;
+    text-align: center;
+
+}
